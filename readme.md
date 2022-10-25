@@ -5,5 +5,11 @@
 관리자는 일반 회원의 관리기능인 회원 정보 수정, 회원 강제 탈퇴, 회원통계, 글 관리 기능 등을 구현하였음
 
 ## 프로젝트 설계
-![개념적 설계](./img/database/pro01_01.png "개념적 설계")
+![물리적 설계1](./img/database/pro01_01.PNG "물리적 설계1")
+![물리적 설계2](./img/database/pro01_02.PNG "물리적 설계2")
+![테이블ERD](./img/database/pro01_03.PNG "테이블ERD")
+![클래스 다이어그램](./img/database/pro01_04.PNG "클래스 다이어그램")
+![회원 테이블 생성](./img/database/pro01_05.PNG "회원 테이블 생성")
+![유저시나리오](./img/database/pro01_06.PNG "유저시나리오")
+![유스케이스](./img/database/pro01_06.PNG "유스케이스")
  

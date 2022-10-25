@@ -11,6 +11,7 @@
 	<a href="index.jsp" class="logo">
 	<img src="./img/LOGO.png" alt="로고">
 	</a>
+	 <nav class="tnb">
 <% 
 	if(id!=null && id.equals("admin")){
 %>
@@ -28,7 +29,7 @@
 		<a href="logout.jsp">로그아웃</a>
 		<a href="memInfo.jsp">회원정보</a>
 		<a href="sitemap.jsp">사이트맵</a>
-		<link rel="stylesheet" href="./css/reset3.css">
+		
 	</div>	
 	<%
 	} else {
@@ -37,7 +38,7 @@
 		<a href="login.jsp">로그인</a>
         <a href="join.jsp">회원가입</a>
         <a href="sitemap.jsp">사이트맵</a> 
-        <link rel="stylesheet" href="./css/reset3.css">
+        
 	</div>
 	<% 
 	}

@@ -5,11 +5,11 @@
 <head>
 	<%@ include file="head.jsp" %>
 	<link rel="stylesheet" href="./css/reset2.css">
-	<link rel="stylesheet" href="header.css">
-	
+    <link rel="stylesheet" href="header.css">
     <style>
     /* header.css */
     /* content */
+    
     .page { clear:both; width: 100%; }
     .page_wrap { width: 1200px; margin: 0 auto; }
     #page1, #page3 { background-color:#ececec; }
@@ -22,13 +22,14 @@
     .ico_lst { clear:both; width: 100%; overflow:hidden; }
     .ico_lst li a { display:block; background-repeat: no-repeat; 
     background-position:0px center; background-size:auto 80%; 
-padding-left: 55px; }
+	padding-left: 55px; }
     .ico_lst li a.icon1 { background-image: url("./img/icon/ico_service_01.svg"); }
     .ico_lst li a.icon2 { background-image: url("./img/icon/ico_service_02.svg");}
     .ico_lst li a.icon3 { background-image: url("./img/icon/ico_service_03.svg"); }
     .cate_tit { color:#222; font-size:20px; padding-bottom: 0.5em; }
     .cate_com { color:#222; font-size:14px; overflow:hidden;
     white-space:nowrap; text-overflow:ellipsis; }
+   
     #page2 { background-color: rgba(230, 248, 255, 0.5); }
     .pic_lst { clear:both; width: 100%; padding-bottom: 80px; }
     .pic_lst:after { content:""; display:block; clear:both; }
@@ -43,6 +44,7 @@ padding-left: 55px; }
     text-shadow:0px 0px 3px red; }
     .pic_com { position:absolute; right:30px; bottom:30px; 
         text-shadow:0px 0px 3px blue; }
+    
     #page3 { background-repeat: no-repeat; 
     background-size: cover; 
     background-position:center center; height: 100vh; background-image:url("./img/bg_partners.jpg"); overflow:hidden; }
@@ -55,8 +57,27 @@ padding-left: 55px; }
     .circle_lst li a img { display:block; width:160px; height:auto; 
     position:absolute; top:50%; left: 20px; z-index:11; margin-top: -28px; }
     /* footer.css */
+       
     </style>
-     <link rel="stylesheet" href="footer.css">
+     	<link rel="stylesheet" href="footer.css">
+    
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var ht = $(window).height();
+            var tp = $(this).scrollTop();
+            if(tp>=600){
+                $(".hd").css("position","fixed");
+            } else {
+                $(".hd").css("position","absolute");
+            }
+        });
+        $
+        $("<ul class='circle_lst lst2'></ul>").insertAfter($(".circle_lst"));
+        $lst1_obj = $(".circle_lst li").clone();
+        $(".circle_lst.lst2").append($lst1_obj);
+    });    
+    </script>
 </head>
 <body>
    <div class="warp">
@@ -65,7 +86,7 @@ padding-left: 55px; }
 </header> 
 <div class="content">
     <figure class="vs">
-        <video width="1860" height="1570" src="./video/video1.mp4" autoplay loop muted></video>  
+        <video width="1900" height="1800" src="./video/video1.mp4" autoplay loop muted></video>  
     </figure>
     <section class="page" id="page1">
         <div class="page_wrap">

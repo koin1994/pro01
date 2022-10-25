@@ -18,7 +18,7 @@
 	try {
 		Class.forName("oracle.jdbc.OracleDriver");
 		con = DriverManager.getConnection(url, dbid, dbpw);
-		sql = "select * from membera";
+		sql = "select * from boarda";
 		pstmt = con.prepareStatement(sql);
 		//select된 데이터가 없으면, rs=null이 됨
 		rs = pstmt.executeQuery();
@@ -69,20 +69,21 @@
         <div class="bread">
             <div class="bread_fr">
                 <a href="index.jsp" class="home">HOME</a> &gt;
-                <span class="sel">회원목록</span>
+                <span class="sel">게시판목록</span>
             </div>
         </div>
         <section class="page">
             <div class="page_wrap">
-                <h2 class="page_title">회원목록</h2>
+                <h2 class="page_title">게시판 글 목록</h2>
   				<div class="tb_fr">
   					<table class="tb">
   						<thead>
   							<tr>
   								<th>연번</th>
-  								<th>아이디</th>
-  								<th>이름</th>
-  								<th>가입일</th>
+  								<th>제목</th>
+  								<th>작성자</th>
+  								<th>작성일</th>
+  								
   							</tr>
   						</thead>
   						<tbody>             
@@ -93,8 +94,10 @@
 %>
 			<tr>
 					<td><%=cnt %></td>
-					<td><a href='memInfo.jsp?id=<%=rs.getString("id") %>'><%=rs.getString("id") %></a></td>
-					<td><%=rs.getString("name") %></td>
+					
+					<td><%=rs.getString("no") %></td>
+					<td><%=rs.getString("title") %></td>
+					<td><%=rs.getString("author") %></td>
 					<td><%=rs.getString("regdate") %></td>
 			</tr>
 <%

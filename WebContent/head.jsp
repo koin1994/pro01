@@ -22,12 +22,4 @@
     <!-- jquery 플러그인 연결 -->
     <script src="./js/jquery-1.11.1.js"></script>
   
-    <script>
-        $(document).ready(function(){
-            
-            $
-            $("<ul class='circle_lst lst2'></ul>").insertAfter($(".circle_lst"));
-            $lst1_obj = $(".circle_lst li").clone();
-            $(".circle_lst.lst2").append($lst1_obj);
-        });    
-    </script>
+    
