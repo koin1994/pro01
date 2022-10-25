@@ -1,0 +1,4 @@
+.tnb span { padding: 1.5em; font-size:12px; color:#333; }
+.tnb span:hover { color:deepskyblue; font-weight:700; text-decoration: underline; text-decoration-style:dotted; }
+.tnb a { padding: 1.5em; font-size:12px; color:#333; }
+.tnb a:hover { color:deepskyblue; font-weight:700; text-decoration: underline; text-decoration-style:dotted; }
