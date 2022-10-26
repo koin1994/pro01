@@ -72,7 +72,7 @@
         </header>
     <div class="content" id="page1">
         <figure class="vs">
-            <img src="./img/MAIN.jpg" alt="비주얼">
+            <img src="./img/main.jpg" alt="비주얼">
         </figure>
         <div class="bread">
             <div class="bread_fr">
@@ -195,7 +195,7 @@
     </div>
     <div class="content" id="page2">
         <figure class="vs">
-            <img src="./img/표지.jpg" alt="비주얼">
+            <img src="./img/main.jpg" alt="비주얼">
         </figure>
         <div class="bread">
             <div class="bread_fr">
@@ -318,7 +318,7 @@
     </div>
     <div class="content" id="page3">
         <figure class="vs">
-            <img src="./img/표지.jpg" alt="비주얼">
+            <img src="./img/main.jpg" alt="비주얼">
         </figure>
         <div class="bread">
             <div class="bread_fr">

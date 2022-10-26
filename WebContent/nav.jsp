@@ -67,6 +67,7 @@
 				<ul class="sub">
 					<li><a href="service.jsp#page1">자주묻는질문</a></li>
 					<li><a href="service.jsp#page2">제품설명서</a></li>
+					<li><a href="boardList.jsp">게시판</a></li>
 					<li><a href="service.jsp#page3">지난제품보기</a></li>
 				</ul>
 			</li>

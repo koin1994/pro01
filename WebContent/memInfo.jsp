@@ -55,7 +55,7 @@
     <link rel="stylesheet" href="header.css">
     <style>
     /* header.css */
-    .hd { position:fixed; }
+    
     /* content */
     .vs { clear:both; width: 100%; height:300px; overflow: hidden; }
     .vs img { display:block; width: 100%; height:auto; }
@@ -72,11 +72,13 @@
     .tb td, .tb th { display:table-cell; }
     .tb th { height: 48px; border-bottom:2px solid #333; border-top:2px solid #333; 
     color:#fff; background-color:#333; }
-    .tb td { height: 48px; border-bottom:1px solid #333; text-align:center; }
+    .tb td { height: 48px; border-bottom:1px solid #333; text-align:center; border-top:1px solid #333; border-right:0.5px solid #333; }
 	.tb tr th:first-child { width:80px; text-align:center; }
 	.tb tr th:nth-child(2) { width:160px; text-align:center; }
 	.tb tr th:nth-child(3) { width:160px; text-align:center; }
 	.tb tr th:last-child { text-align:center; }
+	
+	line-height:24px; border-radius:36px; border:2px solid #333; text-align:center; }
     </style>
     <link rel="stylesheet" href="footer.css">
 </head>
@@ -127,7 +129,7 @@
 							</tr>
 						</tbody> 
 					</table>
-					<a href="memList.jsp">회원 목록</a>
+					<a href="memList.jsp">회원목록</a>
 				</div>
 			</div>
         </section>

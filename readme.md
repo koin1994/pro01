@@ -11,5 +11,5 @@
 ![클래스 다이어그램](./img/database/pro01_04.PNG "클래스 다이어그램")
 ![회원 테이블 생성](./img/database/pro01_05.PNG "회원 테이블 생성")
 ![유저시나리오](./img/database/pro01_06.PNG "유저시나리오")
-![유스케이스](./img/database/pro01_06.PNG "유스케이스")
+![유스케이스](./img/database/pro01_07.PNG "유스케이스")
  
