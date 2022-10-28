@@ -16,8 +16,8 @@
         <div class="sel_box">
             <select name="sel" id="sel" class="sel" onchange="sel_link(this)">
                 <option value="">패밀리 사이트</option>
-                <option value="https://www.cellobike.co.kr/main/main.jsp">첼로자전거</option>
-                <option value="https://www.glnco.co.kr/main/main.jsp">GL&Co</option>
+                <option value="https://www.cellobike.co.kr/main/main.html">첼로자전거</option>
+                <option value="http://www.glnco.co.kr/main/main.html">GL&Co</option>
             </select>
         </div>
         <script>

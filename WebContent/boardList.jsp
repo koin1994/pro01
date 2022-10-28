@@ -33,9 +33,9 @@
 <head>
 	<%@ include file="head.jsp" %>
     <link rel="stylesheet" href="./css/reset2.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header2.css">
     <style>
-    /* header.css */
+    /* header2.css */
     
     /* content */
     .vs { clear:both; width: 100%; height:300px; overflow: hidden; }
@@ -55,9 +55,9 @@
     color:#fff; background-color:#333; }
     .tb td { height: 48px; border-bottom:1px solid #333; text-align:center; }
 	.tb tr th:first-child { width:80px; text-align:center; }
-	.tb tr th:nth-child(2) { width:160px; text-align:center; }
+	.tb tr th:nth-child(2) { width:300px; text-align:center; }
 	.tb tr th:nth-child(3) { width:160px; text-align:center; }
-	.tb tr th:last-child { text-align:center; }
+	.tb tr th:last-child { width: 80px; text-align:center; }
 	
 	.btn_group { clear:both; width:580px; margin:20px auto; }
 	.btn_group .btn { display:block; float:left; margin:20px; min-width:100px; padding:8px; font-size:14px;
@@ -105,18 +105,7 @@ $(document).ready( function () {
   						</thead>
   						<tbody>             
 <%
-		//int curPage = 1;
-		//if(request.getParameter("curPage")!=null){
-		//	curPage = Integer.parseInt(request.getParameter("curPage"));
-		//}
-		
-		//int pageCount = (amount % 10==0) ? 1 : (amount / 10) + 1;
-		//int startNum = curPage * 10 - 9;
-		//int endNum = curPage * 10;
-		//if(endNum>amount){
-		//	endNum = amount;
-		//}
-		
+	
 
 		int cnt = 0;
 		while(rs.next()){

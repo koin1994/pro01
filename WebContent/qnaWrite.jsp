@@ -45,7 +45,7 @@
 	textarea { padding:6px; }
     </style>
     <link rel="stylesheet" href="footer.css">
-	<title>회원 정보</title>
+	<title>질문 하기</title>
 </head>
 <body>
 <header class="hd">
@@ -53,89 +53,55 @@
 </header>
 <div class="content">
        <figure class="vs">
-             <img src="./img/main.jpg" alt="비주얼">
+           <img src="./img/main.jpg" alt="비주얼">
        </figure>
        <div class="bread">
            <div class="bread_fr">
                <a href="index.jsp" class="home">HOME</a> &gt;
-               <span class="sel">회원 정보</span>
+               <span class="sel">질문 하기</span>
            </div>
        </div>
        <section class="page">
            <div class="page_wrap">
-               <h2 class="page_title">회원정보</h2>
-			<%@ include file="connectionPool.conf" %>
-			<%
-			sql = "select * from membera where id=?";
-			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, sid);
-			//select된 데이터가 없으면, rs=null이 됨
-			rs = pstmt.executeQuery();
-			//int cnt = pstmt.executeUpdate();
-			
-			if(rs.next()){
-				
-			%>
+               <h2 class="page_title">질문 하기</h2>
 			<div class="frm1">
-				<form name="frm" class="frm" action="memModifyPro.jsp" method="post" onsubmit="return joinAlert(this)">
+				<form name="frm" class="frm" action="qnaWritePro.jsp" method="post">
 					<table class="tb">
 						<tbody>
 							<tr>
-								<th><label for="id">아이디</label></th>
+								<th><label for="title">질문 제목</label></th>
+								<td><input type="text" name="title" id="title" placeholder="제목 입력" class="in_data" required></td>
+							</tr>
+							<tr>
+								<th><label for="content">질문 내용</label></th>
 								<td>
-									<input type="text" name="id" id="id" class="in_data" value='<%=rs.getString("id") %>' readonly required>
+									<textarea cols="100" rows="6" name="content" id="content" class="in_data2"></textarea>
 								</td>
 							</tr>
 							<tr>
-								<th><label for="pw">비밀번호</label></th>
+								<th><label for="author">작성자</label></th>
 								<td>
-									<input type="password" name="pw" id="pw" class="in_data" value='<%=rs.getString("pw") %>' required>
+									<input type="text" name="author" id="author" class="in_data" value='<%=sid %>' readonly required>
+									<input type="hidden" name="lev" id="lev" value="0">
 								</td>
 							</tr>
 							<tr>
-								<th><label for="pw2">비밀번호 확인</label></th>
+								<th><label for="sec1">비밀글 여부</label></th>
 								<td>
-									<input type="password" name="pw2" id="pw2" class="in_data" required>
-								</td>
-							</tr>
-							<tr>
-								<th><label for="name">회원명</label></th>
-								<td>
-									<input type="text" name="name" id="name" class="in_data" value='<%=rs.getString("name") %>' required>
-								</td>
-							</tr>
-							<tr>
-								<th><label for="from">이메일 주소</label></th>
-								<td>
-									<input type="email" name="email" id="email" class="in_data" value='<%=rs.getString("email") %>' pattern=".+@naver\.com" placeholder="네이버 이메일 주소를 입력" required >
-								</td>
-							</tr>
-							<tr>
-								<th><label for="tel">연락처</label></th>
-								<td>
-									<input type="tel" name="tel" id="tel" class="in_data" value='<%=rs.getString("tel") %>' required >
+									<input type="radio" name="sec" id="sec1" value="N" checked>
+									<label for="">공개</label>
+									<input type="radio" name="sec" id="sec2" value="Y">
+									<label for="">비밀글</label>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 					<div class="btn_group">
-						<button type="submit" class="btn primary">회원 정보 수정</button>
-						<button type="reset" class="btn primary">취소</button>
+						<button type="submit" class="btn primary">글 쓰기</button>
+						<a href="qnaList.jsp" class="btn primary">목록으로</a>
 					</div>
 				</form>
-	            <script>
-	            function joinAlert(f){
-	            	if(f.pw.value!=f.pw2.value){
-	            		alert("비밀번호와 비밀번호 확인이 서로 일치 하지 않습니다.");
-	            		return false;
-	            	}
-	            }
-	            </script>
 			</div>
-			<%
-			}
-			%>
-			<%@ include file="connectionClose.conf" %>
 		</div>
 	</section>
 </div>

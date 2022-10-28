@@ -3,13 +3,15 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <%@ include file="head.jsp" %>
+	 <%@ include file="head.jsp" %>
     <link rel="stylesheet" href="header2.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="./css/reset2.css">
-    <style>
-    /* header2.css */
     
+    <style>
+    /* header.css */
+    
+
     /* content */
     .vs { clear:both; width: 100%; height:300px; overflow: hidden; }
     .vs img { display:block; width: 100%; height:auto; }
@@ -37,7 +39,9 @@
     .pic_hd { position:absolute; top:0; left: 0; z-index:10; 
     width: 100%; height:32px; opacity:0.8; text-shadow:2px 2px 0px #fff, 1px 1px 0px #fff;}
     .ht_ico { display:block; float:left; width:100px; line-height: 32px; height: 32px; padding-left: 10px; padding-top: 10px; color:#333; }
-    
+    .best:before { content:"BEST"; }
+    .new:before { content:"NEW"; }
+    .hit:before { content:"HIT"; }
 
     .page_title { padding-top: 1em; }
     .home { color:#333; }
@@ -69,8 +73,8 @@
     <div class="wrap">
         <header class="hd">
             <%@ include file="nav.jsp" %>
-        </header>
-   
+    	</header>
+       
     <div class="content" id="page1">
         <figure class="vs">
             <img src="./img/main.jpg" alt="비주얼">
@@ -79,118 +83,118 @@
             <div class="bread_fr">
                 <a href="index.jsp" class="home">HOME</a> &gt;
                 <select name="sel1" id="sel1" class="sel">
-                    <option>용품</option>
-                    <option value="company.jsp#page1">자전거</option>
+                    <option>자전거</option>
+                    <option value="product.jsp#page1">용품</option>
                     <option value="service.jsp#page1">고객지원</option>
                     <option value="custom.jsp#page1">회사정보</option>
                     <option value="install.jsp#page1">뉴스</option>
                 </select> &gt; 
                 <select name="sel2" id="sel2" class="sel">
-                    <option selected>자전거 장착</option>
-                    <option value="product.jsp#page2">라이더착용</option>
-                    <option value="product.jsp#page3">유지관리</option>
+                    <option>스타일</option>
+                    <option value="company.jsp#page2">브랜드</option>
+                    <option value="company.jsp#page3">실용성</option>
                 </select>
             </div>
         </div>
         <section class="page">
             <div class="page_wrap">
-                <h2 class="page_title">자전거장착</h2>
+                <h2 class="page_title">스타일</h2>
                 <div class="con_wrap">
                     <ul class="pic_lst">
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/lock1.jfif" alt="pic1"></div>
+                                <div class="pic_fr"><img src="./img/style1.PNG" alt="pic1"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating on"></span></div>
-                                <h3 class="pic_tit">SL110(와이어 소)</h3>
-                                <p class="pic_com">#자물쇠</p>
-                                <p class="pic_info">가격 : 20,000원</p>
+                                <h3 class="pic_tit">칼라스 카본</h3>
+                                <p class="pic_com">#산악    #아팔란치아     #칼라스</p>
+                                <p class="pic_info">가격 : 1,300,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/lock2.jfif" alt="pic2"></div>
+                                <div class="pic_fr"><img src="./img/style2.PNG" alt="pic2"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SL110(와이어 대)</h3>
-                                <p class="pic_com">#자물쇠</p>
-                                <p class="pic_info">가격 : 30,000원</p>
+                                <h3 class="pic_tit">칼라스 70</h3>
+                                <p class="pic_com">#스포츠    #산악     #알루미늄</p>
+                                <p class="pic_info">가격 : 850,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/lock3.jfif" alt="pic3"></div>
+                                <div class="pic_fr"><img src="./img/style3.PNG" alt="pic3"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
-                                <h3 class="pic_tit">SL110C(와이어 컬러)</h3>
-                                <p class="pic_com">#자물쇠</p>
-                                <p class="pic_info">가격 : 25,000원</p>
+                                <h3 class="pic_tit">칼라스 X33</h3>
+                                <p class="pic_com">#스포츠  #산악       #아팔란치아</p>
+                                <p class="pic_info">가격 : 695,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/lock4.jfif" alt="pic4"></div>
+                                <div class="pic_fr"><img src="./img/style4.PNG" alt="pic4"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SL160(번호키 대)</h3>
-                                <p class="pic_com">#자물쇠</p>
-                                <p class="pic_info">가격 : 30,000원</p>
+                                <h3 class="pic_tit">칼라스 45</h3>
+                                <p class="pic_com">#스포츠  #산악   #칼라스     #알루미늄</p>
+                                <p class="pic_info">가격 : 690,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/light1.PNG" alt="pic5"></div>
+                                <div class="pic_fr"><img src="./img/style5.PNG" alt="pic5"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">AF015</h3>
-                                <p class="pic_com">#전조등  #라이트</p>
-                                <p class="pic_info">가격 : 45,000원</p>
+                                <h3 class="pic_tit">XRS 16</h3>
+                                <p class="pic_com">#스포츠  #로드</p>
+                                <p class="pic_info">가격 : 640,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/light2.PNG" alt="pic6"></div>
+                                <div class="pic_fr"><img src="./img/style6.PNG" alt="pic6"></div>
                                 <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">AF025</h3>
-                                <p class="pic_com">#전조등  #라이트</p>
-                                <p class="pic_info">가격 : 40,000원</p>
+                                <h3 class="pic_tit">XRS 14</h3>
+                                <p class="pic_com">#스포츠  #로드</p>
+                                <p class="pic_info">가격 : 525,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/light3.PNG" alt="pic7"></div>
+                                <div class="pic_fr"><img src="./img/style7.PNG" alt="pic7"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">AF400</h3>
-                                <p class="pic_com">#전조등  #라이트</p>
-                                <p class="pic_info">가격 : 55,000원</p>
+                                <h3 class="pic_tit">XRS 14 G</h3>
+                                <p class="pic_com">#스포츠  #아팔란치아</p>
+                                <p class="pic_info">가격 : 590,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/light4.PNG" alt="pic8"></div>
+                                <div class="pic_fr"><img src="./img/style8.PNG" alt="pic8"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">AF450</h3>
-                                <p class="pic_com">#전조등  #라이트</p>
-                                <p class="pic_info">가격 : 60,000원</p>
+                                <h3 class="pic_tit">스팅거 100D</h3>
+                                <p class="pic_com">#라이프스타일  #컴포트산악형</p>
+                                <p class="pic_info">가격 : 430,000원</p>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <div class="pic_fr"><img src="./img/hang1.PNG" alt="pic9"></div>
+                                <div class="pic_fr"><img src="./img/style9.PNG" alt="pic9"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
-                                <h3 class="pic_tit">ABC153</h3>
-                                <p class="pic_com">#물통걸이</p>
-                                <p class="pic_info">가격 : 15,000원</p>
+                                <h3 class="pic_tit">스팅거 100</h3>
+                                <p class="pic_com">#라이프스타일</p>
+                                <p class="pic_info">가격 : 390,000원</p>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <div class="pic_fr"><img src="./img/hang2.PNG" alt="pic10"></div>
+                                <div class="pic_fr"><img src="./img/style10.PNG" alt="pic10"></div>
                                 <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">ABC159</h3>
-                                <p class="pic_com">#물통걸이</p>
-                                <p class="pic_info">가격 : 20,000원</p>
+                                <h3 class="pic_tit">스팅거 SF</h3>
+                                <p class="pic_com">#라이프스타일  #통학용</p>
+                                <p class="pic_info">가격 : 340,000원</p>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </section>        
             </div>
         </section>
     </div>
@@ -202,112 +206,112 @@
             <div class="bread_fr">
                 <a href="index.jsp" class="home">HOME</a> &gt;
                 <select name="sel3" id="sel3" class="sel">
-                    <option>용품</option>
-                    <option value="company.jsp#page1">자전거</option>
+                    <option>자전거</option>
+                    <option value="product.jsp#page1">용품</option>
                     <option value="service.jsp#page1">고객지원</option>
                     <option value="custom.jsp#page1">회사정보</option>
                     <option value="install.jsp#page1">뉴스</option>
                 </select> &gt; 
                 <select name="sel4" id="sel4" class="sel">
-                    <option selected>라이더착용</option>
-                    <option value="product.jsp#page1">자전거 장착</option>
-                    <option value="product.jsp#page3">유지관리</option>
+                    <option selected>브랜드</option>
+                    <option value="company.jsp#page1">스타일</option>
+                    <option value="company.jsp#page3">실용성</option>
                 </select>
             </div>
         </div>
         <section class="page">
             <div class="page_wrap">
-                <h2 class="page_title">라이더착용</h2>
+                <h2 class="page_title">브랜드</h2>
                 <div class="con_wrap">
                     <ul class="pic_lst">
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/glove1.PNG" alt="pic1"></div>
+                                <div class="pic_fr"><img src="./img/brand1.PNG" alt="pic1"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating on"></span></div>
-                                <h3 class="pic_tit">AG510(반장갑 주니어)</h3>
-                                <p class="pic_com">#장갑    #반장갑     #주니어장갑</p>
-                                <p class="pic_info">가격 : 15,000원</p>
+                                <h3 class="pic_tit">FS</h3>
+                                <p class="pic_com">#팬텀    #이륜자전거     #스마트모빌리티</p>
+                                <p class="pic_info">가격 : 1,850,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/glove2.PNG" alt="pic2"></div>
+                                <div class="pic_fr"><img src="./img/brand2.PNG" alt="pic2"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">AG520(반장갑 주니어)</h3>
-                                <p class="pic_com">#장갑    #반장갑     #주니어장갑</p>
-                                <p class="pic_info">가격 : 20,000원</p>
+                                <h3 class="pic_tit">XC</h3>
+                                <p class="pic_com">#MTB스타일    #팬텀     #전기자전거</p>
+                                <p class="pic_info">가격 : 1,700,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/hat1.jfif" alt="pic3"></div>
+                                <div class="pic_fr"><img src="./img/brand3.PNG" alt="pic3"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
-                                <h3 class="pic_tit">AH510(인몰드 보급형)</h3>
-                                <p class="pic_com">#헬멧</p>
-                                <p class="pic_info">가격 : 50,000원</p>
+                                <h3 class="pic_tit">HX</h3>
+                                <p class="pic_com">#팬텀</p>
+                                <p class="pic_info">가격 : 1,200,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/hat2.jfif" alt="pic4"></div>
+                                <div class="pic_fr"><img src="./img/brand4.PNG" alt="pic4"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">AH550(Z3)</h3>
-                                <p class="pic_com">#헬멧</p>
-                                <p class="pic_info">가격 : 45,000원</p>
+                                <h3 class="pic_tit">팬텀 시티</h3>
+                                <p class="pic_com">#시티형 전기자전거</p>
+                                <p class="pic_info">가격 : 1,600,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/hat3.jfif" alt="pic5"></div>
+                                <div class="pic_fr"><img src="./img/brand5.PNG" alt="pic5"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">AH740S(인몰드)</h3>
-                                <p class="pic_com">#헬멧  #어반형</p>
-                                <p class="pic_info">가격 : 35,000원</p>
+                                <h3 class="pic_tit">Q SF</h3>
+                                <p class="pic_com">#출퇴근용  #여행용</p>
+                                <p class="pic_info">가격 : 1,290,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/hat4.jfif" alt="pic6"></div>
+                                <div class="pic_fr"><img src="./img/brand6.PNG" alt="pic6"></div>
                                 <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">AH750S(인몰드 어반_고가)</h3>
-                                <p class="pic_com">#헬멧  #인몰드</p>
-                                <p class="pic_info">가격 : 40,000원</p>
+                                <h3 class="pic_tit">Q SF(PAS)</h3>
+                                <p class="pic_com">#PAS전용  #버튼일체형</p>
+                                <p class="pic_info">가격 : 1,290,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/kid1.PNG" alt="pic7"></div>
+                                <div class="pic_fr"><img src="./img/brand7.PNG" alt="pic7"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SPS155(어린이 보급형)</h3>
-                                <p class="pic_com">#보호대  #팔꿈치보호대</p>
-                                <p class="pic_info">가격 : 20,000원</p>
+                                <h3 class="pic_tit">Q SF 플러스</h3>
+                                <p class="pic_com">#전기자전거  #팬텀</p>
+                                <p class="pic_info">가격 : 1,450,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/kid2.PNG" alt="pic8"></div>
+                                <div class="pic_fr"><img src="./img/brand8.PNG" alt="pic8"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SPS100(어린이 보급형)</h3>
-                                <p class="pic_com">#보호대  #팔꿈치보호대</p>
-                                <p class="pic_info">가격 : 25,000원</p>
+                                <h3 class="pic_tit">팬텀 마이크로 SF</h3>
+                                <p class="pic_com">#팬텀  #여행용</p>
+                                <p class="pic_info">가격 : 1,150,000원</p>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <div class="pic_fr"><img src="./img/kid3.PNG" alt="pic9"></div>
+                                <div class="pic_fr"><img src="./img/brand9.PNG" alt="pic9"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
-                                <h3 class="pic_tit">SPS110(보급형 보호대)</h3>
-                                <p class="pic_com">#보호대</p>
-                                <p class="pic_info">가격 : 30,000원</p>
+                                <h3 class="pic_tit">팬텀 FE</h3>
+                                <p class="pic_com">#이륜자전거</p>
+                                <p class="pic_info">가격 : 950,000원</p>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <div class="pic_fr"><img src="./img/kid4.PNG" alt="pic10"></div>
+                                <div class="pic_fr"><img src="./img/brand10.PNG" alt="pic10"></div>
                                 <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SPS150L(또봇)</h3>
-                                <p class="pic_com">#보호대  #캐릭터보호대</p>
-                                <p class="pic_info">가격 : 40,000원</p>
+                                <h3 class="pic_tit">팬텀 데이지</h3>
+                                <p class="pic_com">#이륜자전거  #스마트모빌리티</p>
+                                <p class="pic_info">가격 : 1,150,000원</p>
                             </a>
                         </li>
                     </ul>
@@ -325,122 +329,121 @@
             <div class="bread_fr">
                 <a href="index.jsp" class="home">HOME</a> &gt;
                 <select name="sel5" id="sel5" class="sel">
-                    <option>용품</option>
-                    <option value="company.jsp#page1">자전거</option>
+                    <option>자전거</option>
+                    <option value="product.jsp#page1">용품</option>
                     <option value="service.jsp#page1">고객지원</option>
                     <option value="custom.jsp#page1">회사정보</option>
                     <option value="install.jsp#page1">뉴스</option>
                 </select> &gt; 
                 <select name="sel6" id="sel6" class="sel">
-                    <option selected>유지관리</option>
-                    <option value="product.jsp#page1">자전거 장착</option>
-                    <option value="product.jsp#page2">라이더착용</option>
+                    <option selected>실용성</option>
+                    <option value="company.jsp#page1">스타일</option>
+                    <option value="company.jsp#page2">브랜드</option>
                 </select>
             </div>
         </div>
         <section class="page">
             <div class="page_wrap">
-                <h2 class="page_title">유지관리</h2>
+                <h2 class="page_title">실용성</h2>
                 <div class="con_wrap">
                     <ul class="pic_lst">
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/bpump1.PNG" alt="pic1"></div>
+                                <div class="pic_fr"><img src="./img/pract1.PNG" alt="pic1"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating on"></span></div>
-                                <h3 class="pic_tit">AP550G</h3>
-                                <p class="pic_com">#펌프</p>
-                                <p class="pic_info">가격 : 35,000원</p>
+                                <h3 class="pic_tit">저스틴 21D</h3>
+                                <p class="pic_com">#라이프스타일    #하이브리드     #레스포</p>
+                                <p class="pic_info">가격 : 510,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/pump2.PNG" alt="pic2"></div>
+                                <div class="pic_fr"><img src="./img/pract2.PNG" alt="pic2"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SP110</h3>
-                                <p class="pic_com">#펌프</p>
-                                <p class="pic_info">가격 : 30,000원</p>
+                                <h3 class="pic_tit">모멘텀</h3>
+                                <p class="pic_com">#라이프스타일    #알루미늄     #레스포</p>
+                                <p class="pic_info">가격 : 510,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/cover1.PNG" alt="pic3"></div>
+                                <div class="pic_fr"><img src="./img/pract3.PNG" alt="pic3"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
-                                <h3 class="pic_tit">SSC210</h3>
-                                <p class="pic_com">#안장커버</p>
-                                <p class="pic_info">가격 : 35,000원</p>
+                                <h3 class="pic_tit">토러스 21</h3>
+                                <p class="pic_com">#라이프스타일</p>
+                                <p class="pic_info">가격 : 375,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/cover2.PNG" alt="pic4"></div>
+                                <div class="pic_fr"><img src="./img/pract4.PNG" alt="pic4"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SSC230(시티용)</h3>
-                                <p class="pic_com">#안장커버</p>
-                                <p class="pic_info">가격 : 38,000원</p>
+                                <h3 class="pic_tit">퀘이크</h3>
+                                <p class="pic_com">#픽시    #아팔란치아</p>
+                                <p class="pic_info">가격 : 490,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/cover3.PNG" alt="pic5"></div>
+                                <div class="pic_fr"><img src="./img/pract5.PNG" alt="pic5"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SSC350(젤 고급)</h3>
-                                <p class="pic_com">#안장커버  #젤 형</p>
-                                <p class="pic_info">가격 : 40,000원</p>
+                                <h3 class="pic_tit">펠릭스</h3>
+                                <p class="pic_com">#하이브리드  #통학용</p>
+                                <p class="pic_info">가격 : 280,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/lope1.PNG" alt="pic6"></div>
+                                <div class="pic_fr"><img src="./img/pract6.PNG" alt="pic6"></div>
                                 <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SLP110</h3>
-                                <p class="pic_com">#짐받이  #로프</p>
-                                <p class="pic_info">가격 : 15,000원</p>
+                                <h3 class="pic_tit">펠릭스 26</h3>
+                                <p class="pic_com">#라이프스타일  #펠릭스</p>
+                                <p class="pic_info">가격 : 265,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/lope2.PNG" alt="pic7"></div>
+                                <div class="pic_fr"><img src="./img/pract7.PNG" alt="pic7"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SLP130</h3>
-                                <p class="pic_com">#짐받이  #로프</p>
-                                <p class="pic_info">가격 : 17,000원</p>
+                                <h3 class="pic_tit">펠릭스 24</h3>
+                                <p class="pic_com">#하이브리드  #라이프스타일</p>
+                                <p class="pic_info">가격 : 255,000원</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div class="pic_fr"><img src="./img/oil1.PNG" alt="pic8"></div>
+                                <div class="pic_fr"><img src="./img/pract8.PNG" alt="pic8"></div>
                                 <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">SO110</h3>
-                                <p class="pic_com">#오일  #자전거용</p>
-                                <p class="pic_info">가격 : 15,000원</p>
+                                <h3 class="pic_tit">펠릭스 22</h3>
+                                <p class="pic_com">#라이프스타일  #하이브리드</p>
+                                <p class="pic_info">가격 : 255,000원</p>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <div class="pic_fr"><img src="./img/spray1.PNG" alt="pic9"></div>
+                                <div class="pic_fr"><img src="./img/pract9.PNG" alt="pic9"></div>
                                 <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
-                                <h3 class="pic_tit">SRI110</h3>
-                                <p class="pic_com">#방청제</p>
-                                <p class="pic_info">가격 : 7,000원</p>
+                                <h3 class="pic_tit">랩터</h3>
+                                <p class="pic_com">#레스포      #랩터</p>
+                                <p class="pic_info">가격 : 240,000원</p>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <div class="pic_fr"><img src="./img/fatch.PNG" alt="pic10"></div>
+                                <div class="pic_fr"><img src="./img/pract10.PNG" alt="pic10"></div>
                                 <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
-                                <h3 class="pic_tit">VUN100</h3>
-                                <p class="pic_com">#패치    #딱지</p>
-                                <p class="pic_info">가격 : 5,000원</p>
+                                <h3 class="pic_tit">팬텀 시터</h3>
+                                <p class="pic_com">#이륜자전거  #전동스쿠터</p>
+                                <p class="pic_info">가격 : 1,150,000원</p>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </section>    
             </div>
         </section>
     </div>
-   
     <script>
     var sel = document.getElementsByClassName("sel");
     for(var i=0;i<sel.length;i++){
@@ -449,10 +452,9 @@
         });
     }
     </script>
- <footer class="ft">
-    <%@ include file="footer.jsp"%>
-</footer>
+ 		<footer class="ft">
+      		<%@ include file="footer.jsp"%>
+		</footer>
 </div>
-<a href="" class="to_top">↑</a><!-- .to_top.on -->
 </body>
 </html>

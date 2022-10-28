@@ -55,9 +55,9 @@
 <head>
 	<%@ include file="head.jsp" %>
     <link rel="stylesheet" href="./css/reset2.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header2.css">
     <style>
-    /* header.css */
+    /* header2.css */
     
     /* content */
     .vs { clear:both; width: 100%; height:300px; overflow: hidden; }
@@ -82,8 +82,8 @@
     .tb tr:last-child th { border-bottom:2px solid #333; }
     .tb tr:last-child td { border-bottom:2px solid #333; }
 	.btn_group { clear:both; width:580px; margin:20px auto; }
-	.btn_group .btn { display:block; float:left; margin:20px; min-width:100px; padding:8px; font-size:14px;
-	line-height:24px; border-radius:36px; border:2px solid #333; text-align:center; }
+	.btn_group .btn { display:block; float:left; margin:30px; min-width:100px; padding:8px; font-size:14px;
+	line-height:24px; border-radius:10px; border:2px solid #333; text-align:center; }
 	.btn_group .btn.primary { background-color:#333; color:#fff; }
 	.btn_group .btn.primary:hover { background-color:royalblue; }
     </style>
@@ -96,7 +96,7 @@
     </header>
     <div class="content">
         <figure class="vs">
-            <img src="./img/LOGO.png" alt="로고">
+            <img src="./img/main.jpg" alt="비주얼">
         </figure>
         <div class="bread">
             <div class="bread_fr">

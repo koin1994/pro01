@@ -5,10 +5,9 @@
 <head>
 	<%@ include file="head.jsp" %>
 	<link rel="stylesheet" href="./css/reset2.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header2.css">
     <style>
-    /* header.css */
-    /* content */
+   
 
     <style>
     .page { clear:both; width: 100%; }
@@ -24,22 +23,19 @@
     .ico_lst li a { display:block; background-repeat: no-repeat; 
     background-position:0px center; background-size:auto 80%; 
     padding-left: 55px; }
-    .ico_lst li a.icon1 { background-image: url("./img/icon/ico_service_01.svg"); }
-    .ico_lst li a.icon2 { background-image: url("./img/icon/ico_service_02.svg");}
-    .ico_lst li a.icon3 { background-image: url("./img/icon/ico_service_03.svg"); }
+    
     .cate_tit { color:#222; font-size:20px; padding-bottom: 0.5em; }
     .cate_com { color:#222; font-size:14px; overflow:hidden;
     white-space:nowrap; text-overflow:ellipsis; }
     .cate_tit{color: #222; font-style: 20px; padding-bottom: 0.5em;}
     .cate_com{color: #222; font-style: 14px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
-
     #page2 { background-color: rgba(230, 248, 255, 0.5); }
     .pic_lst { clear:both; width: 100%; padding-bottom: 80px; }
     .pic_lst:after { content:""; display:block; clear:both; }
     .pic_lst li { float:left; position:relative; margin-bottom: 40px; }
     .pic_lst li a { display:block; width: 360px; margin-right: 40px;
     overflow: hidden; height: 300px; }
-    .pic_lst li a img { display:block; width:600px; margin-left: -120px; transition-duration:0.8s; }
+    .pic_lst li a img { display:block; width:450px; height:350px; margin-left: -120px; transition-duration:0.8s; }
     .pic_lst li a:hover img { margin-left: 0; }
     .pic_lst li a .hv_box { width: 360px; height: 300px; color:#fff; opacity:0; position:absolute; top:0; left: 0; z-index:10; transition-duration:0.8s; background-color:transparent; }
     .pic_lst li a:hover .hv_box { opacity:3; }
@@ -47,8 +43,6 @@
     text-shadow:0px 0px 3px rgb(209, 15, 15); }
     .pic_com { position:absolute; right:30px; bottom:30px; 
         text-shadow:0px 0px 3px rgb(31, 85, 10); }
-
-
     #page3 { background-repeat: no-repeat; 
     background-size: cover; 
     background-position:center center; height: 100vh; background-image:url("./img/bg_partners.jpg"); overflow:hidden; }
@@ -70,11 +64,8 @@
         $(window).scroll(function(){
             var ht = $(window).height();
             var tp = $(this).scrollTop();
-            if(tp>=600){
-                $(".hd").css("position","fixed");
-            } else {
-                $(".hd").css("position","absolute");
-            }
+            
+            
         });
         $
         $("<ul class='circle_lst lst2'></ul>").insertAfter($(".circle_lst"));
@@ -91,7 +82,7 @@
    
 <div class="content">
     <figure class="vs">
-        <video width="1900" height="1800" src="./video/video1.mp4" autoplay loop muted></video>  
+        <video width="1900" height="1800" src="./video/video1.mp4" autoplay loop muted ></video>  
     </figure>
     <section class="page" id="page1">
         <div class="page_wrap">
@@ -158,7 +149,25 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src="./img/ain4.PNG" alt="시티" class="pic">
+                        <img src="./img/ain4.PNG" alt="하이브리드" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">Hybrid</h3>
+                            <p class="pic_com">로드 자전거의 속도감과 MTB의 안정감이 결합된 자전거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/ain5.PNG" alt="컴포트 산악형" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">Comfort MTB</h3>
+                            <p class="pic_com">도심의 불규칙한 노면도 편안하게 주행할 수 있는 MTB스타일 자전거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/ain6.PNG" alt="시티" class="pic">
                         <div class="hv_box">
                             <h3 class="pic_tit">City</h3>
                             <p class="pic_com">일상 생활에서 폭넓게 즐길 수 있는 라이프스타일 자전거</p>
@@ -167,28 +176,10 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src="./img/ain5.PNG" alt="폴딩" class="pic">
+                        <img src="./img/ain7.PNG" alt="폴딩" class="pic">
                         <div class="hv_box">
                             <h3 class="pic_tit">Folding</h3>
                             <p class="pic_com">프레임을 접을 수 있어 실내 보관과 대중 교통 이용이 용이한 자전거</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./img/ain6.PNG" alt="키즈" class="pic">
-                        <div class="hv_box">
-                            <h3 class="pic_tit">Kid</h3>
-                            <p class="pic_com">세발 자전거에서 네발 자전거까지 미취학 어린이들을 위한 자전거</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./img/ain7.PNG" alt="컴포트산악형" class="pic">
-                        <div class="hv_box">
-                            <h3 class="pic_tit">Comfort MTB</h3>
-                            <p class="pic_com">도심의 불규칙한 노면도 편안하게 주행할 수 있는 MTB스타일 자전거</p>
                         </div>
                     </a>
                 </li>
@@ -203,28 +194,28 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src="./img/ain9.PNG" alt="하이브리드" class="pic">
+                        <img src="./img/ain9.PNG" alt="키즈" class="pic">
                         <div class="hv_box">
-                            <h3 class="pic_tit">Hybrid</h3>
-                            <p class="pic_com">로드 자전거의 속도감과 MTB의 안정감이 결합된 자전거</p>
+                            <h3 class="pic_tit">Kid</h3>
+                            <p class="pic_com">세발 자전거에서 네발 자전거까지 미취학 어린이들을 위한 자전거</p>
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="./img/ain10.PNG" alt="픽시" class="pic">
-                        <div class="hv_box">
-                            <h3 class="pic_tit">Fixy</h3>
-                            <p class="pic_com">심플한 디자인과 고유의 주행방식이 매력적인 싱글 스피드 자전거</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./img/ain11.PNG" alt="전동스쿠터" class="pic">
+                        <img src="./img/ain10.PNG" alt="전동스쿠터" class="pic">
                         <div class="hv_box">
                             <h3 class="pic_tit">Electric Scooter</h3>
                             <p class="pic_com">전기를 동력으로 움직일 수 있는 스쿠터</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/ain11.PNG" alt="픽시" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">Fixy</h3>
+                            <p class="pic_com">심플한 디자인과 고유의 주행방식이 매력적인 싱글 스피드 자전거</p>
                         </div>
                     </a>
                 </li>

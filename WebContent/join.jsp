@@ -5,7 +5,7 @@
 <head>
     <%@ include file="head.jsp" %>
     <link rel="stylesheet" href="./css/reset2.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header2.css">
     <link rel="stylesheet" href="footer.css">
     <style>
     /* content */
@@ -42,7 +42,7 @@
     .frm_tb .td { width:200px; }
     .frm_tb .td2 { width:400px; }
     </style>
-    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./header2.css">
     <link rel="stylesheet" href="./footer.css">
     <script>
     $(document).ready(function(){
@@ -154,10 +154,10 @@
                                         <input type="text" id="name" name="name" class="in_dt" required>
                                     </td>
                                 </tr>
-                                <tr>
+                                 <tr>
                                     <th><label for="email">이메일</label></th>
                                     <td>
-                                        <input type="email" id="email" name="email" class="in_dt" required>
+                                        <input type="email" id="email" name="email" class="in_dt" pattern=".+@naver\.com" placeholder="네이버 이메일 주소를 입력" required>
                                     </td>
                                 </tr>
                                 <tr>

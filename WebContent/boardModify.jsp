@@ -55,10 +55,10 @@
 <head>
 	<%@ include file="head.jsp" %>
     <link rel="stylesheet" href="./css/reset2.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header2.css">
     <style>
-    /* header.css */
-    .hd { position:fixed; }
+    /* header2.css */
+    
     /* content */
     .vs { clear:both; width: 100%; height:300px; overflow: hidden; }
     .vs img { display:block; width: 100%; height:auto; }
@@ -99,7 +99,7 @@
     </header>
     <div class="content">
         <figure class="vs">
-           <img src="./img/LOGO.png" alt="로고">
+            <img src="./img/main.jpg" alt="비주얼">
         </figure>
         <div class="bread">
             <div class="bread_fr">

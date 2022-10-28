@@ -28,7 +28,7 @@ select * from membera;
 
 select count(*) as cnt from boarda;
 alter sequence bseq increment by -22;
-
+select * from faqa order by parno asc, gubun asc;
 
 									
 

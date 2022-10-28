@@ -29,9 +29,9 @@
 <head>
 	<%@ include file="head.jsp" %>
     <link rel="stylesheet" href="./css/reset2.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header2.css">
     <style>
-    /* header.css */
+    /* header2.css */
     
     /* content */
     .vs { clear:both; width: 100%; height:300px; overflow: hidden; }

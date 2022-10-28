@@ -4,10 +4,10 @@
 <html lang="ko">
 <head>
     <%@ include file="head.jsp" %>
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header2.css">
     <link rel="stylesheet" href="footer.css">
     <style>
-    /* header.css */
+    /* header2.css */
     
 
     /* content */
