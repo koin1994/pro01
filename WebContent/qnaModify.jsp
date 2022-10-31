@@ -100,7 +100,7 @@
 				<%@ include file="connectionClose.conf" %>
 					<div class="btn_group">
 						<button type="submit" class="btn primary">글 수정</button>
-						<a href="qna.jsp" class="btn primary">목록</a>
+						<a href="qnaList.jsp" class="btn primary">목록</a>
 					</div>
 				</form>
 			</div>
