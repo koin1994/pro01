@@ -21,7 +21,7 @@
     <script src="./js/respond.min.js"></script>
     <!-- jquery 플러그인 연결 -->
     <script src="./js/jquery-1.11.1.js"></script>
-    <link rel="stylesheet" href="./css/reset2.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="header2.css">
     <link rel="stylesheet" href="footer.css">
     
